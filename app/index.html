@@ -4,13 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson10</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+ <header class="header">
+       <div class="header__top"> 
+        <div class="container">
+          
+           <div class="header__top-inner">
+            <div class="header__logo">
+                <a href="#"><img src="img/logo.png" alt="Logo" width="150" height="50"></a>
+            </div>
+            
+            <div class="header__text">
+               <a href="#">
+               <span>Need help?</span>
+               </a> 
+               Talk to an expert: 
+               <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
+            </div>
+            <div class="header__box">
+                <a class="backet" href="#"></a>
+                <a class="header__btn header__btn-login" href="#">Login</a>
+                <a class="header__btn header__btn-register" href="#">Register</a>
+            </div>
+          </div>
+            
+        </div>
+     </div>
+    <div class="header__menu">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">Joomla</a></li>
+                    <li><a href="#">PSD</a></li>
+                    <li><a href="#">Plugins</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  
+   
+</header>    
     
-    
-    
+  <!--
+    1.Отправить изменения в  ГИТ
+        1.1 git add . 
+        1.2 git commit -m 'add header'   
+        1.3 git push origin dev
+        проверить гит что все было-->
+   
+
+<section class="search" style="background-image: url(..//img/search_bg.jpg);">
+    <div class="container">
+        <div class="search__inner">
+            <div class="search__inner-title">
+                Welcome To Foxtar Market Place!
+            </div>
+            <div class="search__inner-text">
+                Premium WordPress Themes, Web Templates and Many More ...
+            </div>
+            <div class="search__inner-form">
+                <form>
+                    <input type="text" placeholder="Search Your Keywords . . ." required>
+                    <button type="submit">
+                        <img src="img/icons/search.png" alt="">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MIX-UP INSTALL после-->
+<!--
+в gulp.task подключить
+    'node_modules/mixitup/dist/mixitup.js'
+и перезапускаем gulp
+-->
+
+<section class="products">
+    <div class="container-fluid">
+        <div class="products__title">
+            Let’s Check Out Our Newest Release Prodcuts
+        </div>
+        <div class="products__inner">
+            <div class="products__inner-btn">
+                <button>All</button>
+                <button>WordPress</button>
+                <button>Joomla</button>
+                <button>Plugins</button>
+                <button>Component</button>
+                <button>PSD</button>
+            </div>
+            <div class="products__inner-box">
+                <div class="product__item">
+                    <a href="#" class="product__item-img style="" "></a>
+                    <div class="product__item-content">
+                        <div class="product__item-name">
+                            <a href="#" class="product__item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a class="product__item-category" href="#">
+                                Site Template
+                            </a>
+                        </div>
+                        <div class="product__item-price">
+                            $19
+                        </div>
+                    </div>
+                    
+                    <div class="product__item-info">
+                        <div class="product__item-author">
+                            <span style=""></span>
+                            Radiusname
+                        </div>
+                        <div class="product__item-star">
+                            (05)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>   
+      
     
     
     
