@@ -84,16 +84,16 @@
         </div>
         <div class="products__inner">
             <div class="products__inner-btn">
-                <button>All</button>
-                <button>WordPress</button>
-                <button>Joomla</button>
-                <button>Plugins</button>
-                <button>Component</button>
-                <button>PSD</button>
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".category-worpress">WordPress</button>
+                <button type="button" data-filter=".category-joomla">Joomla</button>
+                <button type="button" data-filter=".category-plugins">Plugins</button>
+                <button type="button" data-filter=".category-components">Component</button>
+                <button type="button" data-filter=".category-psd">PSD</button>
             </div>
             <div class="products__inner-box">
                
-                <div class="product__item">
+                <div class="product__item mix category-all" data-order="1">
                     <a href="#" class="product__item-img style="style="background-image:url(./img/items/apple-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-worpress category-new" data-order="2">
                      <a href="#" class="product__item-img style="style="background-image:url(./img/items/product-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-plugins" data-order="3">
                     <a href="#" class="product__item-img style="style="background-image:url(./img/items/wordpress-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-plugins category-popular" data-order="4">
                      <a href="#" class="product__item-img style="style="background-image:url(./img/items/golos-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-worpress category-popular" data-order="5">
                    <a href="#" class="product__item-img style="style="background-image:url(./img/items/book-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -228,7 +228,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-plugins category-new" data-order="6">
                      <a href="#" class="product__item-img style="style="background-image:url(./img/items/dots-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -255,7 +255,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-worpress category-new" data-order="7">
                      <a href="#" class="product__item-img style="style="background-image:url(./img/items/user-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -282,7 +282,7 @@
                     </div>
                 </div>
                 
-                <div class="product__item">
+                <div class="product__item mix category-plugins" data-order="8">
                      <a href="#" class="product__item-img style="style="background-image:url(./img/items/symbol-item.jpg);" ></a>
                     <div class="product__item-content">
                         <div class="product__item-name">
@@ -312,8 +312,8 @@
             </div>
         </div>
         <div class="products__button-btn">
-            <button>All New Items</button>
-            <button>Popular Items</button>
+            <button type="button" data-filter=".category-new">All New Items</button>
+            <button type="button" data-filter=".category-popular">Popular Items</button>
         </div>
     </div>
 </section>   
@@ -332,6 +332,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
