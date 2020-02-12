@@ -248,6 +248,7 @@
 
 }
 
+//Залить Product-Slider and advanges block
 /*Products-Slider*/
 .product-slider {
     padding: 70px 0px 120px;
@@ -279,4 +280,37 @@
     }
 }
 
+//choose
+.choose-foxtar {
+    background-color: $bg;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    color: #fff;
+    .foxtar-title {
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
+        line-height: 24px;
+        padding-bottom: 80px;
+}
 
+.choose-items {
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 30px; 
+    .choose-item {
+        width: 380px;
+        text-align: center;
+    .sentense {
+       padding-bottom: 30px;
+       font-size: 21px;
+       font-weight: 400;
+       padding-top: 20px;
+    
+   &.sentense:hover{
+        color: $green;
+    }    
+  }
+ }   
+}
+}
