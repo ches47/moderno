@@ -13,7 +13,6 @@ $(function() {
         slidesToScroll: 4
     });
     
-    
     var mixer = mixitup('.products__inner-box');
     
 });
