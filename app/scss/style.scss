@@ -783,11 +783,10 @@
     button {
         cursor: pointer;
         color: gray;
-        border: none; 
+        border: none;
+        outline: none;
         &:active {
             color: $green;
-            transition: 0.1s;
-            
         }
     }
     
@@ -824,6 +823,7 @@ button.icon-move-vertical-alt1 {
     .product__item {
         max-width: 270px;
         background-color: #fff;
+        transition: all .5s;
     }
     .product__item-img {
         min-height: 180px;
@@ -873,6 +873,84 @@ button.icon-move-vertical-alt1 {
         &:active {
             background-color: $red;
             color: #fff;
+        }
+    }
+}
+
+.product__item-text {
+    display: none;
+}
+
+.product__item-price {
+    span {
+        display: none;
+    }
+}
+
+.product__item-list {
+    display: none;
+    .icon-bubble2, 
+    .icon-heart {
+        display: inline-block;
+        font-size: 12px;
+        color: #70838d;
+        padding-left: 50px;
+//        border-left: 1px solid #aeb4bb;
+        position: relative;
+        span {
+            @include f500;
+            color: $bg; 
+        }
+        &::before {
+            font-size: 16px;
+            color: $green;
+            position: absolute;
+            left: 20px;
+            top: -1px;
+        }
+    }
+    .icon-heart {
+//        padding-right: 30px;
+        
+    }
+}
+
+.product__item{
+    &.list {
+        max-width: 100%;
+        .product__item-img{
+            width: 240px;
+            float: left;
+            min-height: 100%;
+        }
+        .product__item-text {
+            display: block;
+            font-size: 14px;
+            color: #70838d;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .product__item-price {
+            font-size: 30px;
+            span {
+                display: block;
+                font-size: 13px;
+                color: #aeb4bb;
+                margin-top: 30px;
+            }
+        }
+        .product__item-name {
+            max-width: 480px;
+        }
+        .product__item-content {
+            padding-top: 23px;
+        }
+        .product__item-list {
+            display: block;
+            
+        }
+        .product__item-star {
+            margin-left: auto;   margin-right: 30px; 
         }
     }
 }

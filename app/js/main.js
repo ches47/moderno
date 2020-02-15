@@ -22,6 +22,19 @@ $(function() {
         prefix: "$"
     });
     
+    $('.icon-list').on('click', function(){
+        $('.product__item').addClass('list');
+        $('.icon-list').addClass('active');
+        $('.icon-table').removeClass('active');
+    });
+    $('.icon-table').on('click', function() {
+        $('.product__item').removeClass('list');
+        $('.icon-table').addClass('active');
+        $('.icon-list').removeClass('active');
+    });
+    
+    
+    
     var mixer = mixitup('.products__inner-box');
     
 });
