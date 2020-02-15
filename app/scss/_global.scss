@@ -2,6 +2,11 @@ html {
     box-sizing: border-box;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 *, 
 *::before,
 *::after {
@@ -16,7 +21,6 @@ a {
 
 ul,
 li {
-    
     margin: 0;
     padding: 0;
     list-style: none;
@@ -49,6 +53,23 @@ body {
     }
 }
 
+.page-content {
+    background-color: $gray;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+
 .title {
     color: $bg;
     font-size: 36px;
@@ -62,3 +83,34 @@ body {
     display: inline-block;
     margin-right: 13px;
 }
+
+.breadcrumbs {
+    &__inner {
+        padding: 45px 0 40px;
+    }
+    &__list {
+        li {
+            display: inline-block;
+            position: relative;
+        & + li {
+            padding-left: 24px;
+             &::before{
+                content: '-';
+                position: absolute;
+                left: 8px;
+                color: $green;
+            }
+        }
+            &:last-child{
+                a,
+                span {
+                    color: $bg;
+                }
+            }    
+    }
+    a {
+        color: #b0bec5;         
+    }         
+  }    
+}
+
