@@ -1,4 +1,46 @@
+@media (max-width: 1900px) { 
+    .product-slider__inner {
+        text-align: center;
+    }
+    .product-slider__category {
+        text-align: left;    
+    }
+}
+
+@media (max-width: 1440px) { 
+     .product__item {
+        max-width: 560px;
+    } 
+}
+
+@media (max-width: 1400px) { 
+    .products .products__item {
+        flex-basis: calc(33.3333% -30px);
+    }
+}
+
+@media (max-width: 1225px) { 
+     .product__item {
+        max-width: 360px;
+    } 
+}
+
 @media (max-width: 1200px) {
+    .tutorial__item {
+        margin: 0 5px;
+    }
+    
+   .tutorial__inner {
+      flex-wrap: wrap;
+      margin-left: -20px;
+  }
+    
+  .tutorial__item {
+      padding: 0;
+      margin-left: 20px;
+      flex-basis: calc(50% - 20px);
+  } 
+    
     .withdrawals__inner {
         display: block;
     }     
@@ -15,9 +57,44 @@
     .contact__form input {
         width: 100%;
     }
+    .productmini{
+        max-width: 48%;    
+    }
+    .poduct-page__aside {
+         margin-right: 0;   
+    }
+    .product-one__inner {
+        display: block;
+        .aside__item {
+            width: 100%;
+        }
+    }
+    .product-one__content {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .product-one__img {
+        max-width: 100%;
+    }
+    .product-page__inner {
+        display: block;
+        .aside__item {
+            width: 100%;    
+        }
+    }
+    .top-sellers {
+        display: none;    
+    }
 }
 
 @media (max-width: 1150px) {
+    .products .products__item {
+        flex-basis: calc(50% -30px);
+        max-width: 100%;
+    }
+    .product__item-img {
+        min-height: 225px;
+    }
     .footer__inner {
         flex-wrap: wrap;
     }
@@ -28,6 +105,22 @@
     .header__text {
         display: none;
     }
+      .choose-foxtar .choose-items{
+        display: block;
+       
+    }
+    .choose-foxtar .choose-items .choose-item {
+         width: 100%;
+        margin-bottom: 50px;
+    }
+    
+  
+}
+
+@media (max-width: 1020px) { 
+
+   
+    
 }
 
 @media (max-width: 960px) { 
@@ -51,6 +144,25 @@
 }
 
 @media (max-width: 900px) {
+  
+    
+    .search__inner-title {
+       font-size: 35px;
+       line-height: 40px;
+    }
+    
+    .product-page-content .product__item {
+         flex-basis: calc(50% - 20px);
+         margin-left: 20px;
+         margin-bottom: 20px;
+    }
+    .product-page__items {
+        margin-left: -20px;    
+    }
+    .product__item.list { 
+        flex-basis: 100%;    
+    }
+    
     .footer__col-social {
         min-width: 100%;
         margin-top: 30px;
@@ -94,6 +206,13 @@
 }
 
 @media (max-width: 840px) {
+    .author {
+        min-height: 450px;    
+    }
+    .icon-list {
+        display: none;    
+    }
+    
     .menu__list {
         display: none;
         background-color: $bg;
@@ -102,7 +221,6 @@
         left: 0;
         right: 0;
         z-index: 1;
-//        padding-bottom: 30px;
         text-align: center;
         a {
             display: block;
@@ -117,6 +235,14 @@
             &:first-child {
                 border-top: 1px solid #fff;
             }
+        }
+        .product-one__box {
+            display: block;
+        
+        }
+        .product-one__link {
+            margin-bottom: 20px;
+            
         }
     }
     
@@ -144,6 +270,29 @@
     }
 }
 
+
+@media (max-width: 800px) { 
+     .product__item {
+        max-width: 100%;
+    } 
+    .product-slider .slick-dots li button {
+        display: none;
+    }
+    .product-slider {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 770px) { 
+    .product-one__box {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .product-one__link {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 740px) { 
     .page-404__title {
         font-size: 24px;
@@ -157,9 +306,45 @@
     .page-404__link {
         padding: 10px 30px 6px; 
     }
+    .tutorial__item { 
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .products .products__item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }    
+    .author__box {
+        display: block;
+        padding: 50px 15px;
+        text-align: center;
+    }
+    .author__title {
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
 }
 
 @media (max-width: 640px) {
+   
+    .product-page-content .product__item {
+         flex-basis: 100%;
+         max-width: 100%;
+    }
+    .author__title {
+        display: none;
+    }
+    
+    .products__inner-btn button{
+        width: 100%;
+        & + button {
+            margin-left: 0;
+        }
+    }
+    
     .notification__box,
     .message__box{
         display: none;
@@ -237,6 +422,41 @@
     .profile__aside-btn {
         width: 280px;
     }
+    .product-one__tabs {
+        .tabs {
+            display: block; 
+        }
+        .tab {
+            display: block;
+            & + tab {
+                border-top: 1px solid #d7d7d7;  
+            }
+        }
+    }
+    .productmini {
+        max-width: 100%;
+    }
+    .tab-items__list {
+        column-count: 1;
+        column-gap: 0px;
+        
+    }
+    .product-one__link{
+        a {
+            margin-bottom: 15px;
+            width: 100%;
+            & + a {
+                margin-left: 0;
+            }
+        }   
+    }
+    
+    .product-one__img {
+        height: 300px;
+    }
+     .choose-foxtar .foxtar-title {
+       font-size: 24px;
+    }
     
 }
 
@@ -263,6 +483,14 @@
 }
 
 @media (max-width: 520px) { 
+    .creat-acc {
+        width: 100%;
+    }
+    .login__wrapper button {
+        width: 100%;
+        margin-left: 0;
+    }
+    
     .header__btn-menu {
         display: block;
     }
@@ -332,6 +560,10 @@
     .circle__menu {
         top: 52px;
     }
+    
+    .tutorial {
+        display: none;
+    }
 
 }
 
@@ -354,6 +586,10 @@
 }
 
 @media (max-width: 390px) { 
+    .fancybox-content {
+        padding: 44px 10px; 
+    }
+    
      .header__box {
         &.active {
              left: 47px;   
